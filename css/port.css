@@ -1,17 +1,186 @@
+
+
+:root{
+    --background-color:#444A34;
+    --background-color:#000000;
+    /* --background-color:#B0A184; */
+    --font-color: #BAD3E7;
+}
+
 body{
     margin:0;
     padding: 0;
+    background-color: var(--background-color);
+    
 }
 
-/* @font-face {
+@font-face {
     font-family: "NeueMetanaNext-SemiBold";
     src: url('font/NeueMetanaNext-SemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
+} 
+
+/*algo no kerning n ta bem*/
+
+@font-face {
+    font-family: "NeueMetanaNextOutline-Black";
+    src: url('font/NeueMetanaNextOutline-Black.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+} 
+
+/* #noiseFilter{
+    position: absolute;
+    z-index: -1;
+}  */
+
+#noise {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 1900px;
+  background-color: transparent;
+  /* background: rgba(100, 100, 100, 0.6), */
+  /* background: linear-gradient(to top, black, transparent), */
+     background:url(https://grainy-gradients.vercel.app/noise.svg); 
+    /* url(grain_1.svg); */
+
+  filter: contrast(200%) brightness(20%);
+
+  /* filter: invert(1); */
+}
+
+/* .nome{
+    height: 700px;
 } */
 
+.n{
+    margin-top: 0;
+    padding: 100px;
+}
+
+#ema,#gomes{
+    display: block;
+    position: absolute;
+    /* z-index: 2; */
+}
+
+#ema{
+    top: 50px;
+    left: 400px;
+    transform:rotate(3deg);
+    /* filter: drop-shadow(5px 5px 5px #222); */
+    /* filter: invert(1); */
+}
+
+#ema:hover ~ #gomes, #ema:hover, #ema:hover { 
+    filter: invert(1);
+}
 
 
-/* h1{
+#gomes{
+    top: 400px;
+    left: 400px;
+    transform: rota(-10deg);
+    /* filter: drop-shadow(5px 5px 5px #222); */
+    /* filter: invert(1); */
+}
+
+
+
+
+
+h1{
+    font-family: "NeueMetanaNextOutline-Black";
+    font-size: 10em;
+    color: var(--font-color);
+}
+
+h2 {
     font-family: "NeueMetanaNext-SemiBold";
+    font-size: 3em; 
+    color: var(--font-color);
+}
+
+h3 {
+    font-family: "NeueMetanaNext-SemiBold";
+    font-size: 2em; 
+    color: var(--font-color);
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: "NeueMetanaNext-SemiBold";
+    font-size: 1.5em; 
+    color: var(--font-color);
+    margin: 0;
+}
+
+.work{
+    margin-bottom: 200px;
+}
+
+.imagens{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    gap: 4vw;
+    margin: 0;
+    overflow-x: scroll;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    /* scroll-snap-type: x mandatory; */
+    /* anchor-name: --my-carousel; */
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* .imagens::scroll-button(*){
+    border: 0;
+    font-size: 2rem;
+    background: none;
+    color:#000000;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    position-anchor: --my-caroussel;
+    
 } */
+
+/* .imagens::scroll-button(*):hover,
+.imagens::scroll-button(*):focus{
+    opacity: 1;
+}
+
+.imagens::scroll-button(*):disabled{
+    opacity:0.2;
+    cursor: unset;
+} */
+
+/* .imagens::scroll-button(left){
+    content: "◄" / "Previous";
+    right: calc(anchor(left) - 70px);
+    bottom: calc(anchor(top) + 13px);
+}
+
+.imagens::scroll-button(right){
+    content: "►" / "Next";
+    right: calc(anchor(left) - 70px);
+    bottom: calc(anchor(top) + 13px);
+} */
+
+.item{
+    background-color: rgba(173, 37, 37, 0.432);
+    /* border: 1px solid brown; */
+    /* padding: 20px; */
+
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+
+#capa-alta-baixa{
+    filter: hue-rotate(7deg);
+    /* filter: saturate(200%); */
+}
+
