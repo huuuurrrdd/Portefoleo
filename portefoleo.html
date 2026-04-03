@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="port.css"> -->
+    <link rel="stylesheet" href="css/port.css">
     <title>Portefóleo</title>
 </head>
 <body>
+
+    <!-- <svg 
+    viewBox="0 0 200 200"
+    xmlns='http://www.w3.org/2000/svg'>
+
+    <filter id='noiseFilter'>
+        <feTurbulence 
+        type='fractalNoise' 
+        baseFrequency='0.85' 
+        numOctaves='3' 
+        stitchTiles='stitch' />
+    </filter>
+
+    <rect
+        width='100%' 
+        height='100%' 
+        filter='url(#noiseFilter)' />
+    </svg> 
+
+    <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+    </svg>-->
+
+    <div id = "noise"></div>
     <section className = "first-page">
-        <h1>Portfoleo</h1>
-        <h2>Ema Gomes</h2>
-        <p>Multimedia Designer</p>
+        <div class="nome">
+            <!-- <img id = "ema" src = "imagens/ema.png" height = 300px>
+            <img id = "gomes"src = "imagens/gomes.png" height = 300px> -->
+            <h1 class = n>Ema Gomes</h1>
+        </div>
+        
+        <!-- <h1>Ema Gomes</h1> -->
+        <h3>Multimedia Designer</h3>
+        
+        <!-- <p>Interaction <br/> User experience <br/> Editorial </p> -->
         <!-- <p>Picture</p> -->
-        <br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br>
         <p><a href="#portfoleo">See my portfoleo</a></p>
     </section>
     
@@ -23,15 +50,156 @@
     <section>
         <h2 id = "portfoleo">Portefoleo</h2>
 
-        <div>
-            <h3>Work 1</h3>
-            <h3>Work 2</h3>
-            <h3>Work 3</h3>
-            <h3>Work 4</h3>
+        <div class ="works">
+            <div class = "work"> <!--Ading scroll h-->
+                <div class="imagens">
+                    <div class = "item item-1">
+                        <img id="capa-alta-baixa" src="imagens/altabaixa/Pictur1.png" alt="capa" height = 385px>
+                        <img src="imagens/altabaixa/Picture8.png" alt="capa" height = 385px>
+                        <img src="imagens/altabaixa/Picture9.png" alt="" height = 385px>
+                    </div>
+                    <div class = "item item-2">
+                        <img src="imagens/altabaixa/Picture3.png" alt="" height = 385px>
+                        <img src="imagens/altabaixa/Picture4.png" alt="" height = 385px>
+                        <img src="imagens/altabaixa/Picturee13.png" alt="" height = 385px>
+                        
+                    </div>
+                    <div class = "item item-3">
+                        <img src="imagens/altabaixa/Picture5.png" alt="" height = 385px>
+                        <img src="imagens/altabaixa/Picture6.png" alt="" height = 385px>
+                        <img src="imagens/altabaixa/Picture14.png" alt="" height = 385px>
+                    </div>
+                    <div class = "item item-4">
+                        <video autoplay muted loop poster="??" height="385">
+                            <source src="imagens/altabaixa/video_altabaixa.mp4" type="video/mp4">
+                        </video>
+                        <img src="imagens/altabaixa/poster1.png" alt="" height = 385px>
+                        <img src="imagens/altabaixa/poster2.png" alt="" height = 385px>
+                    </div>
+                    <div class = "item item-4">
+                        <img src="imagens/altabaixa/poster3.png" alt="" height = 385px>
+                        <img src="imagens/altabaixa/poster4.png" alt="" height = 385px>
+                    </div>
+                </div>
+                <h3>Alta & Baixa - Revista de cultura tipográfica</h3>|
+                <p>Ano: 2023</p>
+            </div>
+
+            <div class = "work">
+                <div class = "imagens">
+                    <div class = "item item-1">
+                        <img src="imagens/marieboulanger/p1.png" alt="" height = 485px>
+                        <img src="imagens/marieboulanger/p2.png" alt="" height = 485px>
+                        <!-- <img src="imagens/marieboulanger/p3.png" alt="" height = 285px> -->
+                    </div>
+                    <div class = "item item-2">
+                        <img src="imagens/marieboulanger/rooms/1.png" alt="" height = 485px>
+                        <img src="imagens/marieboulanger/rooms/2.png" alt="" height = 485px>
+                    </div>
+                    <div class = "item item-3">
+                        <img src="imagens/marieboulanger/rooms/3.png" alt="" height = 485px>
+                        <img src="imagens/marieboulanger/rooms/4.png" alt="" height = 485px>
+                    </div>
+                    <div class = "item item-4">
+                        <video autoplay muted loop poster="??" height="485">
+                            <source src="imagens/marieboulanger/36_Days_Type.mp4" type="video/mp4">
+                        </video>
+                        <img src="imagens/marieboulanger/rooms/5.png" alt="" height = 485px>                        
+                    </div>
+                    <div class = "item item-4">
+                        <img src="imagens/marieboulanger/rooms/6.png" alt="" height = 485px>
+                        <img src="imagens/marieboulanger/rooms/7.png" alt="" height = 485px>
+                    </div>
+                    <div class = "item item-4">
+                        <img src="imagens/marieboulanger/p3.png" alt="" height = 485px>
+                    </div>
+                    <!--Falta colocar a parte dos mockups e posters-->
+                </div>
+                <img src="" alt="">
+                <h3>Exposition Marie Boulanger</h3>
+                <p>Ano: 2024</p>
+            </div>
+
+            <div class = "work">
+                <div class = "imagens">
+                    <div class = "item item-1">
+                        <video autoplay muted loop poster="??" height="485">
+                            <source src="imagens/sushinote/GamePlay.mp4" type="video/mp4">
+                        </video>
+                        <img src="imagens/sushinote/elements.png" alt="" height = 485px>
+                    </div>
+                    
+                    <div class = "item item-2">
+                        <img src="imagens/sushinote/one.png" alt="" height = 285px>
+                        <img src="imagens/sushinote/two.png" alt="" height = 285px>
+                        <img src="imagens/sushinote/three.png" alt="" height = 285px>
+                        <img src="imagens/sushinote/four.png" alt="" height = 285px>                   
+                    </div>
+
+                    <div class = "item item-3">
+                        <video autoplay muted loop poster="??" height="485"> <!--colocar lik para video original-->
+                            <source src="imagens/sushinote/prototype.mp4" type="video/mp4">
+                        </video>
+                        <img src="imagens/sushinote/paper2.jpg" alt="" height = 485px>
+                        <img src="imagens/sushinote/paper.jpg" alt="" height = 485px>
+                    </div>
+
+                </div>
+                <img src="" alt="">
+                <h3>Sushi Note</h3>
+                <p>2023</p>
+            </div>
+
+            <div class = "work">
+                <div class = "imagens">
+                    <div class = "item item-1">
+                            <img src="imagens/tipografiamodular/fonte1/post1.png" alt="" height = 485px>
+                            <img src="imagens/tipografiamodular/f1_preto.png" alt="" height = 485px> 
+                            <img src="imagens/tipografiamodular/fonte1/post6.png" alt="" height = 485px>  
+                            <img src="imagens/tipografiamodular/fonte1/post2.png" alt="" height = 485px>                 
+                    </div>
+                    <div class = "item item-2">
+                                            
+                    </div>
+                </div>
+                
+                <h3>Tipografia Modular</h3>
+            </div> 
+
+            <div class = "work">
+                <div class = "imagens">
+                    <div class = "item item-1">
+                        <video autoplay muted loop poster="??" height="485">
+                            <source src="imagens/waver/waver_video_f.mp4" type="">
+                        </video>
+                        <img src="imagens/waver/IMG_01.jpg" alt="" height = 485px>
+                    </div>
+                    <div class="item item-2">
+                        <img src="imagens/waver/IMG_02.jpg" alt="" height = >
+                    </div>
+                </div>
+                <h3>Waver | Interface technologies for children and learning</h3>
+            </div>
+
+            <div class = "work">
+                <img src="" alt="">
+                <h3>Eles ainda estão nas paredes</h3>
+            </div>
+
+            <div class = "work">
+                <img src="" alt="">
+                <h3>World key app</h3>
+            </div>
+
+            <div class = "work">
+                <img src="" alt="">
+                <h3>Dissertação</h3>
+            </div>
+            
         </div>
 
     </section>
     
 </body>
-<script src = "port.js"></script>
+<script src = "js/port.js"></script>
 </html>
