@@ -135,6 +135,38 @@ p{
     -webkit-overflow-scrolling: touch; 
 }
 
+.work1 .item img{
+    width: calc(100%/3);
+}
+
+.work1 .item iframe{
+    display: block;
+    width: 860px;
+    height:100%;
+    /* object-fit: cover; */
+    margin: auto;
+}
+
+.work1 .item-5 img{
+    width: calc(100%/4);
+}
+
+img{
+    height:100%;
+    object-fit: cover;
+}
+
+.work2 .item img{
+    width: calc(100%/2);
+}
+
+.work2 .item iframe{
+    height: 100%;
+    width: calc(100%/2);
+}
+
+
+
 /* .imagens::scroll-button(*){
     border: 0;
     font-size: 2rem;
@@ -176,6 +208,7 @@ p{
 
     flex: 0 0 100%;
     scroll-snap-align: center;
+    font-size: 0;
 }
 
 
