@@ -174,7 +174,42 @@ img{
     height: 100%;
 }
 
+.work3 .item iframe{
+    width: calc(100%/2);
+}
+
 .work3 .item-2 iframe{
+    display: block;
+    margin: auto;
+}
+
+.work3 .item-3 img{
+    width: calc(100%/4);
+}
+/* .work3 .item-2 iframe{
+    display: block;
+    margin: auto;
+} */
+
+.work5 .item img{
+    width: calc(100%/3)
+} 
+
+.work6 .item img{
+    width: calc(100%/2);
+}
+
+.work6 .item iframe{
+    width: calc(100%/2);
+    height: 100%;
+}
+
+.work7 .item img{
+    width: calc(100%/2.3);
+    height: 100%;
+}
+
+.work7 .item img{
     display: block;
     margin: auto;
 }
