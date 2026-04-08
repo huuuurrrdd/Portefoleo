@@ -165,6 +165,15 @@ img{
     width: calc(100%/2);
 }
 
+.work3 .item img{
+    width: calc(100%/2);
+}
+
+.work3 .item iframe{
+    width: calc(100%/2);
+    height: 100%;
+}
+
 
 
 /* .imagens::scroll-button(*){
