@@ -260,6 +260,10 @@ img{
     font-size: 0;
 }
 
+.work7 .item{
+    background-color: #C1E0A0;
+}
+
 
 #capa-alta-baixa{
     filter: hue-rotate(7deg);
