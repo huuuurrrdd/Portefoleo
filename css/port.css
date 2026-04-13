@@ -7,10 +7,16 @@
     --font-color: #BAD3E7;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body{
     margin:0;
     padding: 0;
     background-color: var(--background-color);
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
     
 }
 
@@ -88,9 +94,6 @@ body{
 }
 
 
-
-
-
 h1{
     font-family: "NeueMetanaNextOutline-Black";
     font-size: 10em;
@@ -121,9 +124,10 @@ p{
     margin-bottom: 200px;
 }
 
-.imagens{
+.imagens, .slide{
     width: 100vw;
     height: 500px;
+    position: relative; /*adicionado*/
     display: flex;
     gap: 4vw;
     margin: 0;
@@ -133,10 +137,20 @@ p{
     /* scroll-snap-type: x mandatory; */
     /* anchor-name: --my-carousel; */
     -webkit-overflow-scrolling: touch; 
+    overflow-x: hidden;
 }
+
+/* .slide{
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
 
 .work1 .item img{
     width: calc(100%/3);
+}
+
+.work1 .item, .work3 .item, .work5 .item{
+    background-color: #000000;
 }
 
 .work1 .item iframe{
@@ -250,7 +264,13 @@ img{
     bottom: calc(anchor(top) + 13px);
 } */
 
+.slide{
+    position: relative;
+    overflow-x: hidden;
+}
+
 .item{
+    position: absolute;
     background-color: rgba(173, 37, 37, 0.432);
     /* border: 1px solid brown; */
     /* padding: 20px; */
@@ -258,10 +278,78 @@ img{
     flex: 0 0 100%;
     scroll-snap-align: center;
     font-size: 0;
+    inset: 0; /*adicionado*/
+    opacity: 0;/*adicionado*/
+    margin:0;/*adicionado*/
+    padding:0;/*adicionado*/
+    pointer-events: none;
 }
+
+.item[data-active]{
+    opacity: 1;
+    pointer-events: all;
+    overflow-x: hidden;
+}
+
+/* slide in from the right (next)*/
+@keyframes slideInFromRight {
+    from { transform: translate(100%); }
+    to { transform: translate(0%);}
+}
+
+/*slide in from the left (prev)*/
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%) }
+    to { transform: translateX(0); }
+}
+
+.item[data-active][data-direction = "next"] {
+    animation: slideInFromRight 0.4s ease forwards;
+}
+
+.item[data-active][data-direction = "prev"] {
+    animation: slideInFromLeft 0.4s ease forwards;
+}
+
+.carrossel-button{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    /* border-radius: .25rem; */
+    padding: 0 .5rem;
+    /* background-color: rgba(0, 0, 0, .1); */
+}
+
+.carrossel-button:hover,
+.carrossel-button:focus{
+    color:white;
+    /* background-color: rgba(0, 0, 0, .2); */
+}
+
+/* .carrossel-button:focus{
+    outline: 1px solid black;
+} */
+
+.carrossel-button.prev {
+    left: 1rem;
+
+}
+
+.carrossel-button.next {
+    right: 1rem;
+
+}
+
 
 .work7 .item{
     background-color: #C1E0A0;
+   
 }
 
 
