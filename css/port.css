@@ -126,6 +126,13 @@ p{
     margin-bottom: 200px;
 }
 
+.desc{
+    padding: 20px;;
+    font-size: 1em;
+    width: 700px;
+    text-wrap: pretty;
+}
+
 .imagens, .slide{
     width: 100vw;
     height: 500px;
