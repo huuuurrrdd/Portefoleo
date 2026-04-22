@@ -164,6 +164,10 @@ p{
     overflow-x: hidden;
 }
 
+.imagens-mobile{
+    display: none;
+}
+
 /* .slide{
     overflow-x: hidden;
     overflow-y: hidden;
@@ -393,6 +397,75 @@ img{
     /* filter: saturate(200%); */
 }
 
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 7em;
+
+    }
+
+    .n{
+        margin-top: 0;
+        padding: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .imagens{
+        display: none;
+    }
+
+    .imagens-mobile{
+        width: 100vw;
+        height: 500px;
+        position: relative; /*adicionado*/
+        display: flex;
+        gap: 4vw;
+        margin: 0;
+        overflow-x: scroll;
+        /* overflow-x: hidden; */
+        scroll-behavior: smooth;
+        /* scroll-snap-type: x mandatory; */
+        /* anchor-name: --my-carousel; */
+        -webkit-overflow-scrolling: touch; 
+        overflow-x: hidden;
+    }
+
+    .work4 .imagens-mobile .item{
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+    }
+
+    .imagens-mobile .item img{
+        width: calc(100%);
+    }
+
+    .imagens-mobile .item iframe{
+        width: calc(100%);
+    }
+
+    .work4 .item .img-vertical{
+        width: auto;
+    }
+
+    .work4 .item .img-horizontal{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 5em;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 4em;
+
+    }
+}
 
 
 .linkdin{
