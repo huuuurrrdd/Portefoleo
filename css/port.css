@@ -267,6 +267,38 @@ img{
     margin: auto;
 }
 
+.en{
+    display: none;
+}
+
+.bt-pt, .bt-en{
+    display: flex;
+    font-family: "NeueMetanaNext-SemiBold";
+    font-size: 1em;
+    color: var(--font-color);
+    position: absolute;
+    /* background-color: #6e2f2f; */
+    top: 20px;
+    right: 25px;
+    /* height: 20px;
+    width: 30px; */
+    padding: 5px;
+}
+
+.bt-pt{
+    right: 65px;
+    
+}
+
+.bt-pt:hover, .bt-en:hover{
+    background-color: #BAD3E7;
+    /* width: 30px; */
+    cursor:pointer;
+    color: #000000;
+    /* height: 20px;
+    width: 30px; */
+}
+
 
 
 /* .imagens::scroll-button(*){
