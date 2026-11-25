@@ -36,7 +36,7 @@
 // })
 
 
-
+///// FUNÇÃO CARROSSEL ///////////////////////////////
 function setupCarousel(buttonSelector, buttonDataKey) {
     const buttons = document.querySelectorAll(buttonSelector)
 
@@ -72,6 +72,7 @@ setupCarousel("[data-carousel-button]", "carouselButton")
 setupCarousel("[data-carousel-button-mobile]", "carouselButtonMobile")
 
 
+///// SELEÇÃO LINGUAS ///////////////////////////////
 //selecionar os elementos
 
 let bt_pt = document.querySelector(".bt-pt")
@@ -170,6 +171,125 @@ bt_en.addEventListener("click", () => {
 })
 
 // console.log(lang)
+
+// CATEGORIAS PARA TRABALHOS ////////
+let allworks = document.querySelectorAll(".work")
+let workHighlight = document.querySelectorAll(".hightlight")
+let workList = document.querySelector(".works")
+
+//categorias
+let website = document.querySelectorAll(".website")
+let editorial = document.querySelectorAll(".editorial")
+let brand = document.querySelectorAll(".brand")
+let uxui = document.querySelectorAll(".uxui")
+let game = document.querySelectorAll(".game")
+let typography = document.querySelectorAll(".typography")
+let sound = document.querySelectorAll(".sound")
+let generative = document.querySelectorAll(".generative")
+let artistic = document.querySelectorAll(".artistic")
+let animation = document.querySelectorAll(".animation")
+
+let allStateElements = [website, editorial, brand, uxui, game, typography, sound, generative, artistic, animation]
+let allstates = ["website", "editorial", "brand", "uxui", "game", "typography", "sound", "generative", "artistic", "animation"]
+
+
+//cada um dos botões
+let btDefault = document.querySelector(".bt-default")
+
+let btWebsite = document.querySelector(".bt-website")
+let btEditorial = document.querySelector(".bt-editorial")
+let btBrand = document.querySelector(".bt-brand")
+let btUxui = document.querySelector(".bt-uxui")
+let btGame = document.querySelector(".bt-game")
+let btTypography = document.querySelector(".bt-typography")
+let btSound = document.querySelector(".bt-som")
+let btGenerative = document.querySelector(".bt-generative")
+let btArtistic = document.querySelector(".bt-artistic")
+let btAnimation = document.querySelector(".bt-animation")
+
+//todos os bt topic
+let btTopic = document.querySelectorAll(".bt-topic")
+let btTopicOn = [false, false, false, false, false, false, false, false, false, false]
+
+
+let state = "default"
+
+//verificar se todos estao com display block (pode ter uns com flex)
+
+function cleanWorks(){
+        
+    allworks.forEach(element => {
+        element.style.display = "none"
+    })
+}
+
+function changedState(){ //para sempre que há uma alteração do estado
+    cleanWorks()
+
+    if(state == "default"){
+        workHighlight.forEach(element => {
+            element.style.display = "block"
+        })
+        btDefault.style.backgroundColor = "#444A34"
+        
+        btTopic.forEach(bt => bt.style.backgroundColor = "") //reset color
+        return
+    }
+
+
+    if(!btTopicOn.includes(true)){
+        state = "default"
+        changedState()
+        return
+    }
+
+
+    btDefault.style.backgroundColor = "" // desativa bt default
+    btTopic.forEach((bt, index) => {
+        bt.style.backgroundColor = btTopicOn[index] ? "#444A34" : ""
+    })
+
+    
+        allstates.forEach((stateName, index) => { // usa o index do "allstates" para o "allStateElements"
+        if(btTopicOn[index]){ // verificar se é falso ou não
+            allStateElements[index].forEach(element => {
+                element.style.display = "block"
+            })
+        }
+    })
+
+
+}
+
+changedState()
+
+btDefault.addEventListener('click', (e) => {
+    state = "default"
+    btTopicOn = [false, false, false, false, false, false, false, false, false, false]
+    changedState()
+})
+
+btTopic.forEach((button, index) => {
+    button.addEventListener('click', (e) => {
+        btTopicOn[index] = !btTopicOn[index] //toggle true/false
+        state = "topics"
+        changedState()
+    })
+})
+
+
+if(state == "all"){
+
+    allworks.forEach(element => {
+        element.style.display = "block"
+    })
+}
+
+
+
+
+
+
 
 
 

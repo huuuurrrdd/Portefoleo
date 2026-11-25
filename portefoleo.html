@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/imagens/page_icon.svg">
     <link rel="stylesheet" href="css/port.css">
     <title>Portefóleo</title>
 </head>
@@ -34,6 +35,13 @@
         <div class="nome">
             <!-- <img id = "ema" src = "imagens/ema.png" height = 300px>
             <img id = "gomes"src = "imagens/gomes.png" height = 300px> -->
+
+            <div class = "head-nav">
+                <div class = "contactos">Contactos</div>
+                <div class = "bt-pt">PT</div>
+                <div class = "bt-en">EN</div>
+            </div>
+           
             <h1 class = "n pt">Ema Gomes</h1>
             <h3 class = "n2 pt">Designer Multimédia</h3>
             <p class = "desc desc1 pt">Sou uma designer com competências multidisciplinares em design gráfico, UX/UI design, webdesign, tendo formação nas áreas de design de interação, design editorial, media computacionais e design de comunicação.</p>
@@ -42,9 +50,14 @@
             <h3 class = "n2 en">Multimedia Designer</h3>
             <p class = "desc desc1 en">I am a designer with multidisciplinary skills in graphic design, UX/UI design, and web design, with a background in interaction design, editorial design, computational media, and communication design.</p>
 
-            <div class = "contactos">Contactos</div>
-            <div class = "bt-pt">PT</div>
-            <div class = "bt-en">EN</div>
+
+                <!-- <div class = "contactos">Contactos</div>
+                <div class = "bt-pt">PT</div>
+                <div class = "bt-en">EN</div> -->
+
+
+
+
 
             
         </div>
@@ -57,13 +70,28 @@
         <!-- <p><a href="#portfoleo">See my portfoleo</a></p> -->
     </section>
     
+    <section class = "buttons">
+        <div class="bt-select bt-default">Hightlight</div>
 
+        <div class="bt-select bt-topic bt-website">Website</div>
+        <div class="bt-select bt-topic bt-editorial">Editorial</div>
+        <div class="bt-select bt-topic bt-brand">Brand</div>
+        <div class="bt-select bt-topic bt-uiux">UX/UI</div>
+        <div class="bt-select bt-topic bt-game">Game Design</div>
+        <div class="bt-select bt-topic bt-typography">Typography</div>
+        <div class="bt-select bt-topic bt-sound">Sound Design</div>
+        <div class="bt-select bt-topic bt-generative">Generative</div>
+        <div class="bt-select bt-topic bt-artistic">Artistic</div>
+        <div class="bt-select bt-topic bt-animation">Animation</div>
+    </section>
 
     <section class="work-list">
         <!-- <h2 id = "portfoleo">Portefoleo</h2> -->
 
         <div class ="works">
-            <div class = "work work1 w-altabaixa" data-carousel> <!--Ading scroll h-->
+
+
+            <div class = "work work1 w-altabaixa hightlight website editorial" data-carousel> <!--Ading scroll h-->
                 <div class="imagens">
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
@@ -152,7 +180,145 @@
                 <p class = "desc en">Alta & Baixa, a typography culture magazine, available in a printed leporello format and as an online website.</p>
             </div>
 
-            <div class = "work work2 w-marie">
+            <div class = "work work1-erd w-rosa-galiza website">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/torre_galiza/macbook_air_2022_torre_galiza.png" alt="" height = 485px>
+                            <img src="imagens/torre_galiza/iphone_18_torre_galiza.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/torre_galiza/desktop_torre_galiza.png" alt="" height = 485px>
+                            <img src="imagens/torre_galiza/phone_torre_galiza.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/torre_galiza/macbook_air_2022_torre_galiza.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/torre_galiza/iphone_18_torre_galiza.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="imagens/torre_galiza/desktop_torre_galiza.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-4">
+                            <img src="imagens/torre_galiza/phone_torre_galiza.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Rosa Galiza</h3>
+                <p class="n3 pt">Ano: 2026</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Rosa Galiza</h3>
+                <p class="n3 en">Year: 2026</p>
+                <p class="desc en"></p>
+            </div> 
+
+            <div class = "work work2-erd w-rochafiel website">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/rochafiel/macbook_air_2022_rochafiel.png" alt="" height = 485px>
+                            <img src="imagens/rochafiel/iphone_15_rochafiel.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/rochafiel/desktop_rochafiel.png" alt="" height = 485px>
+                            <img src="imagens/rochafiel/phone_rochafiel.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/rochafiel/macbook_air_2022_rochafiel.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/rochafiel/iphone_15_rochafiel.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="imagens/rochafiel/desktop_rochafiel.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-4">
+                            <img src="imagens/rochafiel/phone_rochafiel.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Rochafiel</h3>
+                <p class="n3 pt">Ano: 2026</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Rochafiel</h3>
+                <p class="n3 en">Year: 2026</p>
+                <p class="desc en"></p>
+            </div> 
+
+            <div class = "work work3-erd w-impakta website">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/impakta/zenbook_duo_14.png" alt="" height = 485px>
+                            <img src="imagens/impakta/iphone15.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img src="imagens/impakta/territorios_desktop.png" alt="" height = 485px>
+                            <img src="imagens/impakta/territorios_phone.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img src="imagens/impakta/experiencia_desktop.png" alt="" height = 485px>
+                            <img src="imagens/impakta/experiencia_phone.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/impakta/zenbook_duo_14.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/impakta/iphone15.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="imagens/impakta/territorios_desktop.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-4">
+                            <img src="imagens/impakta/territorios_phone.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-5">
+                            <img src="imagens/impakta/experiencia_desktop.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-6">
+                            <img src="imagens/impakta/experiencia_phone.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Impakta</h3>
+                <p class="n3 pt">Ano: 2026</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Impakta</h3>
+                <p class="n3 en">Year: 2026</p>
+                <p class="desc en"></p>
+            </div> 
+
+            <div class = "work work2 w-marie hightlight brand">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev"  data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next"  data-carousel-button="next">&#10230;</button>
@@ -241,7 +407,7 @@
                 <p class="desc en">Development of the curatorial concept and visual identity for an exhibition at DARQ (Department of Architecture, University of Coimbra) about Marie Boulanger, a designer and typographer.The exhibition also includes a technological interaction component.</p>
             </div>
 
-            <div class = "work work3 w-sushinote">
+            <div class = "work work3 w-sushinote hightlight uxui game">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
@@ -311,7 +477,7 @@
                 <br> Watch out for the creatures and the big cat!</p>
             </div>
 
-            <div class = "work work4 w-tipografia">
+            <div class = "work work4 w-tipografia hightlight typography">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
@@ -388,7 +554,7 @@
                 <p class="desc en">Development of a modular typeface based on molds found in signage across the city of Coimbra.</p>
             </div> 
 
-            <div class = "work work5 w-ratosparedes">
+            <div class = "work work5 w-ratosparedes hightlight uxui game">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
@@ -456,7 +622,7 @@
                 <p class="desc en">Eles ainda estão nas paredes (They Are Still in the Walls) is a narrative horror game inspired by The Rats in the Walls by H. P. Lovecraft. <br>Developed in RPG Maker, it features a third-person perspective and a pixel art aesthetic.</p>
             </div>
 
-            <div class = "work work6 w-waver">
+            <div class = "work work6 w-waver hightlight uxui">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
@@ -516,7 +682,7 @@
                 <p class="desc en">This interface is designed to teach children about sound and musical scales.</p>
             </div>
 
-            <div class = "work work7 w-app">
+            <div class = "work work7 w-app hightlight uxui">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
@@ -557,24 +723,746 @@
                 <p class="n3 en">Year: 2021</p>
                 <p class="desc en">Prototyping of an application designed as a social network that promotes interaction between aspects of different cultures and regions.</p>
             </div>
-
-            <!-- <div class = "work work8">
+            
+            <!-- <div class = "work work8 w-site-pessoal website">
                 <div class = "imagens" data-carousel>
                     <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
                     <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
                     <div class = "slide" data-slides>
-                        <div class = "item item-1">
-
+                        <div class = "item item-1" data-active>
+                            <img src="" alt="" height = 485px>
                         </div>
 
                         <div class = "item item-2">
-                            
+                            <img src="" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
                         </div>
                     </div>
-                    
                 </div>
-                <h3>Dissertação</h3>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Site Pessoal</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Personal Website</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
             </div> -->
+            
+            <div class = "work work9 w-findcat website">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img class="img-horizontal" src="imagens/findcat/findcat_macbook_air_2022.png" alt="" height = 485px>
+                            <img class="img-vertical" src="imagens/findcat/findcat_ipad_pro_2018.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img src="imagens/findcat/chrome_dark_findcat.png" alt="" height = 485px>
+                            <img src="imagens/findcat/ipad_findcat.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img  src="imagens/findcat/findcat_macbook_air_2022.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img  src="imagens/findcat/findcat_ipad_pro_2018.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="imagens/findcat/chrome_dark_findcat.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-4">
+                            <img src="imagens/findcat/ipad_findcat.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Find cat</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Find cat</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+            
+            <div class = "work work10 w-marbleruns website">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img class= "img-horizontal img1" src="imagens/marbleruns/capa.png" alt="" height = 485px>
+                            <img class= "img-horizontal img2" src="imagens/marbleruns/home.png" alt="" height = 485px>  
+                        </div>
+
+                        <div class = "item item-2">
+                            <img class= "img-horizontal" src="imagens/marbleruns/about.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/about_mob.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img class= "img-horizontal" src="imagens/marbleruns/champ.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/champ_mob.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-4">
+                            <img class= "img-horizontal" src="imagens/marbleruns/teams.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/teams_mob.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-5">
+                            <img class= "img-horizontal" src="imagens/marbleruns/team.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/team_mob.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-6">
+                            <img class= "img-horizontal" src="imagens/marbleruns/new.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/new_mob.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-7">
+                            <img class= "img-horizontal" src="imagens/marbleruns/sign.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/sign_mob.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-8">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vrZWtyvI3IE?si=EVlKuIB4QHSi4cDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <img class= "img-horizontal" src="imagens/marbleruns/champ.png" alt="" height = 485px>
+                            <img class= "img-vertical" src="imagens/marbleruns/champ_mob.png" alt="" height = 485px> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/marbleruns/capa.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/marbleruns/home.png" alt="" height = 485px> 
+                        </div>
+                        <div class = "item item-3">
+                            <img class = "img-mob" src="imagens/marbleruns/home_mob.png" alt="" height = 485px> 
+                        </div>
+                        <div class = "item item-4">
+                            <img src="imagens/marbleruns/about.png" alt="" height = 485px> 
+                        </div>
+                        <div class = "item item-5">
+                            <img class = "img-mob" src="imagens/marbleruns/about_mob.png" alt="" height = 485px> 
+                        </div>
+                        <div class = "item item-6">
+                            <img src="imagens/marbleruns/champ.png" alt="" height = 485px> 
+                        </div>
+                        <div class = "item item-7">
+                            <img class = "img-mob" src="imagens/marbleruns/champ_mob.png" alt="" height = 485px> 
+                        </div>
+                        <div class = "item item-8">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vrZWtyvI3IE?si=EVlKuIB4QHSi4cDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Marble Runs</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Marble Runs</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <div class = "work work11 w-ida sound">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/ida/fans.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img class="pt" src="imagens/ida/grafico_ida_sons_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/ida/grafico_ida_sons_en.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/ida/fans.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img class="pt" src="imagens/ida/grafico_ida_sons_mobile_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/ida/grafico_ida_sons_mobile_en.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Ida</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Ida</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <div class = "work work12 w-retrato-menez sound">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/menez/retrato_de_menez_1968.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YKqaV-aHVLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img class="pt" src="imagens/menez/menez_chart_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/menez/menez_chart_en.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-4">
+                            <img class="pt" src="imagens/menez/menez_chart2_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/menez/menez_chart2_en.png" alt="" height = 485px>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/menez/retrato_de_menez_1968.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YKqaV-aHVLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-3">
+                            <img class="pt" src="imagens/menez/menez_chart_mobile_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/menez/menez_chart_mobile_en.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-4">
+                            <img class="pt" src="imagens/menez/menez_chart2_mobile_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/menez/menez_chart2_mobile_en.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Retrato de Menez</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Menez Portrait</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <div class = "work work13 w-constellate generative">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/constellate/generative_design_outputs.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img class="pt" src="imagens/constellate/flowchart_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/constellate/flowchart_en.png" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/R8w0c_3FiVI?si=ZyGwIDNKtGLHlaKe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/constellate/generative_design_outputs_mobile.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img class="pt" src="imagens/constellate/flowchart_mobile_pt.png" alt="" height = 485px>
+                            <img class="en" src="imagens/constellate/flowchart_mobile_en.png" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/R8w0c_3FiVI?si=ZyGwIDNKtGLHlaKe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Contellate</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Contellate</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+            
+            <div class = "work work14 w-praticas-artisticas artistic">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V4MEqYqGFdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qzPL86sCm1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V4MEqYqGFdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qzPL86sCm1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Praticas Artisticas Contenporâneas</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Contemporary Artistic Practices</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <div class = "work work15 w-praticas-artisticas artistic">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/v6zuIbYq1t8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/49hJpDz9SdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/v6zuIbYq1t8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/49hJpDz9SdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Praticas Artisticas Contenporâneas</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Contemporary Artistic Practices</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <div class = "work work16 w-composicoes-fotograficas artistic">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="imagens/pac_colagens/Colagem-02.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-03.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img src="imagens/pac_colagens/Colagem-04.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-05.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-06.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img src="imagens/pac_colagens/Colagem-15.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-20.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-4">
+                            <img src="imagens/pac_colagens/Colagem-10.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-11.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-5">
+                            <img src="imagens/pac_colagens/Colagem-07.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-08.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-09.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-6">
+                            <img src="imagens/pac_colagens/Colagem-13.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-19.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-14.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-7">
+                            <img src="imagens/pac_colagens/Colagem-18.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-17.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-21.jpg" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <!--img src="imagens/pac_colagens/Colagem-02.jpg" alt="" height = 485px-->
+                            <img src="imagens/pac_colagens/Colagem-03.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/pac_colagens/Colagem-04.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="imagens/pac_colagens/Colagem-15.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-4">
+                            <!--img src="imagens/pac_colagens/Colagem-11.jpg" alt="" height = 485px-->
+                            <img src="imagens/pac_colagens/Colagem-10.jpg" alt="" height = 485px>
+                            <!--img src="imagens/pac_colagens/Colagem-11.jpg" alt="" height = 485px-->
+                        </div>
+                        <div class = "item item-5">
+                            <img src="imagens/pac_colagens/Colagem-07.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-08.jpg" alt="" height = 485px>
+                            <img src="imagens/pac_colagens/Colagem-09.jpg" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-6">
+                            <img src="imagens/pac_colagens/Colagem-19.jpg" alt="" height = 485px>
+                            
+                        </div>
+                        <div class = "item item-7">
+                            <img src="imagens/pac_colagens/Colagem-17.jpg" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Composições Fotográficas</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Photographic Compositions</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <!-- <div class = "work work17 w-filmagem artistic">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img src="" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <img src="" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Filmagem e montagem de vídeo</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Filming and video editing</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div> -->
+
+            <div class = "work work18 w-tree-hugger animation">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <video width="320" height="auto" poster="imagens/tree_hugger/thumbnail_th.png" controls>
+                                <source src="videos/tree_huger.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img src="imagens/tree_hugger/figuras_th.png" alt="" height = 485px>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <video width="320" height="auto" poster="imagens/tree_hugger/initial_frame_mobile.png" controls>
+                                <source src="videos/tree_hugger_mobile_fixed.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/tree_hugger/figuras_th.png" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Tree hugger | Kimya Dawson</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Tree hugger | Kimya Dawson</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>
+
+            <div class = "work work19 w-a-gruta hightlight animation">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eOMZ8iilcPs?si=EVlKuIB4QHSi4cDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class = "item item-2">
+                            <img src="imagens/gruta/01_moodboard_black.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img class="pt" src="imagens/gruta/02_storyboard_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/02_storyboard_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-4">
+                            <img class="pt" src="imagens/gruta/03_styleframe_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/03_styleframe_pt.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-5">
+                            <img class="pt" src="imagens/gruta/04_texture_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/04_texture_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-6">
+                            <img class="pt" src="imagens/gruta/05_scenario_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/05_scenario_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-7">
+                            <img class="pt" src="imagens/gruta/06_characters_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/06_characters_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-8">
+                            <img class="pt" src="imagens/gruta/07_transformation_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/07_transformation_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-9">
+                            <img class="pt" src="imagens/gruta/08_star_rig_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/08_star_rig_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-10">
+                            <img class="pt" src="imagens/gruta/09_jump_white_pt.jpg" alt="" height = 485px>
+                            <img class="en" src="imagens/gruta/09_jump_white_en.jpg" alt="" height = 485px>
+                        </div>
+
+                        <div class = "item item-11">
+                            <img src="imagens/gruta/10_previs_white.jpg" alt="" height = 485px>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides> 
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eOMZ8iilcPs?si=EVlKuIB4QHSi4cDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="imagens/gruta/01_moodboard_white_mobile.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-3">
+                            <img class="pt" src="imagens/gruta/02_storyboard_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/02_storyboard_white_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-4">
+                            <img class="pt" src="imagens/gruta/03_styleframe_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/03_styleframe_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-5">
+                            <img class="pt" src="imagens/gruta/04_texture_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/04_texture_white_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-6">
+                            <img class="pt" src="imagens/gruta/05_scenario_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/05_scenario_white_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-7">
+                            <img class="pt" src="imagens/gruta/06_charecters_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/06_characters_white_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-8">
+                            <img class="pt" src="imagens/gruta/07_transformation_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/07_transformation_white_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-9">
+                            <img class="pt" src="imagens/gruta/08_star_rig_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/08_star_rig_white_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-10">
+                            <img class="pt" src="imagens/gruta/09_jump_white_mobile_pt.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/09_jump_black_mobile_en.jpg" alt="" height = 385px>
+                        </div>
+                        <div class = "item item-11">
+                            <img class="pt" src="imagens/gruta/10_previs_white_mobile.jpg" alt="" height = 385px>
+                            <img class="en" src="imagens/gruta/10_previs_white_mobile.jpg" alt="" height = 385px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">A Gruta</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">A Gruta</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div>      
+            
+            <div class = "work work20 w-jump animation">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pz892WQdj2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pz892WQdj2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-2">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Jump</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Jump</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div> 
+
+            <div class = "work work21 w-walk-cycle animation">
+                <div class = "imagens" data-carousel>
+                    <button class="carrossel-button prev" data-carousel-button="prev">&#10229;</button>
+                    <button class="carrossel-button next" data-carousel-button="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xivXke3ayY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class = "item item-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/I64cUSSKw1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-mobile" data-carousel>
+                    <button class="carrossel-button-mobile prev" data-carousel-button-mobile="prev">&#10229;</button>
+                    <button class="carrossel-button-mobile next" data-carousel-button-mobile="next">&#10230;</button>
+                    <div class = "slide" data-slides>
+                        <div class = "item item-1" data-active>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xivXke3ayY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-2">
+                             <iframe width="560" height="315" src="https://www.youtube.com/embed/I64cUSSKw1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class = "item item-3">
+                            <img src="" alt="" height = 485px>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="n3 pt">Walk Cycle</h3>
+                <p class="n3 pt">Ano: 2023</p>
+                <p class="desc pt"></p>
+
+                <h3 class="n3 en">Walk Cycle</h3>
+                <p class="n3 en">Year: 2023</p>
+                <p class="desc en"></p>
+            </div> 
+
             
         </div>
 
@@ -585,7 +1473,7 @@
         <h3 class = "n3 en">Contacts</h3>
         <div class="desc contactos-lista">
             <a href="mailto:emalgomes@gmail.com"><img class="gmail" src="imagens/zcontactos/gmail.svg"></a>
-            <a href="www.linkedin.com/in/ema-gomes-b867931bb"><img class="linkdin" src="imagens/zcontactos/lin.svg"></a>
+            <a href="www.linkedin.com/in/emalgome"><img class="linkdin" src="imagens/zcontactos/lin.svg"></a>
             <a href=""><img class="cv" src="imagens/zcontactos/cv.svg"></a>
             
         </div>
